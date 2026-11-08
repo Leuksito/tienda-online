@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b0f">
+  <meta name="description" content="Tactical Airsoft: tienda online de réplicas de airsoft, accesorios y equipamiento de protección.">
+  <title>Tactical Airsoft | Tienda Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Tactical Airsoft, inicio">
+        <svg class="logo__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <circle cx="12" cy="12" r="7"></circle>
+          <line x1="12" y1="2" x2="12" y2="5"></line>
+          <line x1="12" y1="19" x2="12" y2="22"></line>
+          <line x1="2" y1="12" x2="5" y2="12"></line>
+          <line x1="19" y1="12" x2="22" y2="12"></line>
+          <circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"></circle>
+        </svg>
+        <span class="logo__text">
+          <span class="logo__title">TACTICAL<span>AIRSOFT</span></span>
+          <span class="logo__subtitle">Equipamiento de combate</span>
+        </span>
+      </a>
+
+      <div class="search">
+        <svg class="search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"></circle>
+          <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
+        </svg>
+        <input type="text" id="buscador" placeholder="Buscar réplicas, accesorios..." autocomplete="off" aria-label="Buscar productos">
+      </div>
+
+      <button type="button" id="btnCesta" class="cart-button" aria-label="Ver cesta de la compra">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <circle cx="9" cy="20" r="1.4"></circle>
+          <circle cx="18" cy="20" r="1.4"></circle>
+          <path d="M2 3h3l2.4 11.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 7H6"></path>
+        </svg>
+        <span class="cart-button__text">Ver Cesta</span>
+        <span id="contadorCesta" class="cart-badge hidden">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <span class="hero__tag">Equipamiento táctico profesional</span>
+          <h1>Domina el <span>campo de batalla</span></h1>
+          <p>Réplicas de airsoft, accesorios, protección, uniformes y parches de temática española. Todo lo que necesitas para tu próxima partida, con envío en 24/48 horas.</p>
+          <div class="hero__stats">
+            <div><strong>+29</strong><span>Productos</span></div>
+            <div><strong>6</strong><span>Categorías</span></div>
+            <div><strong>24/48h</strong><span>Envío</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <div class="container">
+        <div class="toolbar">
+          <div id="filtros" class="filters" aria-label="Filtrar por categoría"></div>
+          <div class="toolbar__right">
+            <span id="contadorResultados" class="results-count"></span>
+            <div class="sort">
+              <label for="orden">Ordenar por</label>
+              <select id="orden">
+                <option value="relevancia">Relevancia</option>
+                <option value="precio-asc">Precio: menor a mayor</option>
+                <option value="precio-desc">Precio: mayor a menor</option>
+                <option value="nombre-az">Nombre: A-Z</option>
+                <option value="stock-desc">Stock: mayor a menor</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div id="gridProductos" class="product-grid"></div>
+
+        <div id="sinResultados" class="empty hidden">
+          <h3>Sin resultados</h3>
+          <p>No hay productos que coincidan con tu búsqueda o filtro.</p>
+        </div>
+
+        <noscript>
+          <div class="load-error">
+            <h3>JavaScript desactivado</h3>
+            <p>Activa JavaScript en tu navegador para poder cargar el catálogo y usar la cesta.</p>
+          </div>
+        </noscript>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p><strong>Tactical Airsoft</strong> · Proyecto educativo de ASIR · Tienda ficticia sin fines comerciales.</p>
+      <p>Imágenes reales procedentes de <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a>. Revisa la normativa vigente sobre airsoft.</p>
+    </div>
+  </footer>
+
+  <div id="modalCesta" class="modal" aria-hidden="true">
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="tituloCesta">
+      <header class="modal__header">
+        <h2 id="tituloCesta">Tu cesta</h2>
+        <button type="button" id="btnCerrarCesta" class="modal__close" aria-label="Cerrar cesta">&times;</button>
+      </header>
+
+      <p id="mensajeEnvio" class="shipping"></p>
+
+      <div id="listaCesta" class="cart-list"></div>
+
+      <footer class="modal__footer">
+        <div class="total">Total del pedido<strong id="totalCesta">0,00 €</strong></div>
+        <button type="button" id="btnFinalizar" class="btn btn--primary">Finalizar Compra</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="toasts" class="toasts" aria-live="polite" aria-atomic="false"></div>
+
+  <script src="datos-respaldo.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
