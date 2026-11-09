@@ -402,17 +402,6 @@ function mostrarToast(mensaje, tipo) {
   }, 3000);
 }
 
-function mostrarError() {
-  document.getElementById("gridProductos").innerHTML = `
-    <div class="load-error">
-      <h3>No se pudieron cargar los datos</h3>
-      <p>Necesitas abrir la página desde un servidor local. Por ejemplo:</p>
-      <p><code>python -m http.server 8000</code></p>
-      <p>y visitar <code>http://localhost:8000</code>.</p>
-    </div>
-  `;
-}
-
 function iniciarEventos() {
   document.getElementById("buscador").addEventListener("input", function (evento) {
     busqueda = evento.target.value.toLowerCase().trim();

@@ -1,0 +1,270 @@
+window.PRODUCTOS_RESPALDO = [
+  {
+    "id": 1,
+    "name": "M4A1 Carbine AEG",
+    "description": "Réplica eléctrica del fusil de asalto M4A1 con cuerpo de polímero reforzado, culata ajustable y riel Picatinny. Incluye batería y cargador.",
+    "price": 189.99,
+    "stock": 12,
+    "category": "Réplicas",
+    "image": "img/m4.jpg"
+  },
+  {
+    "id": 2,
+    "name": "AK-47 Tactical AEG",
+    "description": "Réplica AEG del icónico AK-47 con acabado táctico, culata plegable y una potencia aproximada de 400 FPS.",
+    "price": 179.50,
+    "stock": 8,
+    "category": "Réplicas",
+    "image": "img/ak47.jpg"
+  },
+  {
+    "id": 3,
+    "name": "MP5 SD5 AEG",
+    "description": "Subfusil MP5-SD5 con silenciador integrado y funcionamiento eléctrico. Ideal para partidas de CQB en espacios cerrados.",
+    "price": 199.99,
+    "stock": 5,
+    "category": "Réplicas",
+    "image": "img/mp5.jpg"
+  },
+  {
+    "id": 4,
+    "name": "SCAR-L AEG",
+    "description": "Réplica del fusil SCAR-L con rieles M-LOK, culata regulable y gearbox reforzado para un uso intensivo.",
+    "price": 249.99,
+    "stock": 0,
+    "category": "Réplicas",
+    "image": "img/scar.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Sniper L96 AWS",
+    "description": "Rifle de francotirador L96 con cerrojo de acción manual y mira telescópica incluida. Precisión y alcance para tiradores pacientes.",
+    "price": 159.99,
+    "stock": 3,
+    "category": "Réplicas",
+    "image": "img/l96.jpg"
+  },
+  {
+    "id": 6,
+    "name": "G36C Compact AEG",
+    "description": "Réplica compacta G36C con culata plegable, perfecta para asaltos rápidos y espacios reducidos.",
+    "price": 174.99,
+    "stock": 6,
+    "category": "Réplicas",
+    "image": "img/g36c.jpg"
+  },
+  {
+    "id": 7,
+    "name": "SVD Dragunov AEG",
+    "description": "Réplica del rifle de precisión SVD Dragunov con acabado en madera, bípode y cargador de alta capacidad.",
+    "price": 229.99,
+    "stock": 2,
+    "category": "Réplicas",
+    "image": "img/svd.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Glock 17 GBB",
+    "description": "Pistola de gas blowback Glock 17 con corredera metálica y retroceso realista. Incluye cargador de 20 bolas.",
+    "price": 129.99,
+    "stock": 10,
+    "category": "Pistolas",
+    "image": "img/glock.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Beretta M9 GBB",
+    "description": "Réplica de la Beretta M9 con sistema GBB, seguros funcionales y empuñadura ergonómica de gran agarre.",
+    "price": 139.99,
+    "stock": 7,
+    "category": "Pistolas",
+    "image": "img/beretta.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Colt 1911 GBB",
+    "description": "Pistola 1911 de gas blowback con acabado pavonado, mira de fibra óptica y corredera de metal.",
+    "price": 149.99,
+    "stock": 4,
+    "category": "Pistolas",
+    "image": "img/1911.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Makarov PM NBB",
+    "description": "Pistola Makarov de gas non-blowback, fiable y económica. Una opción perfecta para entrenamiento y partidas casuales.",
+    "price": 89.99,
+    "stock": 9,
+    "category": "Pistolas",
+    "image": "img/makarov.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Pistola táctica CO2",
+    "description": "Pistola de CO2 con corredera metálica, alta potencia y cargador de 20 bolas. Acabado táctico en negro mate.",
+    "price": 119.99,
+    "stock": 0,
+    "category": "Pistolas",
+    "image": "img/pistol.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Mira Red Dot Docter",
+    "description": "Mira de punto rojo compacta con montura Weaver, ideal para réplicas de asalto y pistolas de airsoft.",
+    "price": 49.99,
+    "stock": 20,
+    "category": "Accesorios",
+    "image": "img/reddot.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Silenciador QD",
+    "description": "Silenciador de liberación rápida con rosca de 14 mm CCW y relleno de espuma para reducir el sonido.",
+    "price": 39.99,
+    "stock": 15,
+    "category": "Accesorios",
+    "image": "img/suppressor.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Batería LiPo 11.1V",
+    "description": "Batería LiPo de 11.1V y 1200 mAh con conector Deans, compatible con la mayoría de réplicas AEG.",
+    "price": 29.99,
+    "stock": 25,
+    "category": "Accesorios",
+    "image": "img/battery.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Cargador G36 470rds",
+    "description": "Cargador de alta capacidad para G36 con cuerpo metálico y sistema de resorte reforzado.",
+    "price": 24.99,
+    "stock": 18,
+    "category": "Accesorios",
+    "image": "img/magazine.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Chaleco táctico MOLLE",
+    "description": "Chaleco táctico con placas MOLLE, ajustable y con múltiples bolsillos porta-cargadores y accesorios.",
+    "price": 59.99,
+    "stock": 11,
+    "category": "Accesorios",
+    "image": "img/vest.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Máscara full face antivaho",
+    "description": "Máscara protectora full face con visor panorámico antivaho, certificada para la práctica del airsoft.",
+    "price": 34.99,
+    "stock": 22,
+    "category": "Protección",
+    "image": "img/goggles.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Casco táctico ECH",
+    "description": "Casco táctico ligero con sistema de retención ajustable, rieles laterales y acolchado interior desmontable.",
+    "price": 54.99,
+    "stock": 6,
+    "category": "Protección",
+    "image": "img/helmet.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Guantes tácticos",
+    "description": "Guantes tácticos de medio dedo con refuerzo en la palma y cierre de velcro para un ajuste seguro.",
+    "price": 14.99,
+    "stock": 30,
+    "category": "Protección",
+    "image": "img/gloves.jpg"
+  },
+  {
+    "id": 21,
+    "name": "HK416 A5 AEG",
+    "description": "Réplica AEG del fusil HK416 A5 con guardamanos M-LOK, culata ajustable y gearbox de alta precisión. El arma de referencia de las fuerzas especiales.",
+    "price": 269.99,
+    "stock": 7,
+    "category": "Réplicas",
+    "image": "img/hk416.png"
+  },
+  {
+    "id": 22,
+    "name": "Uniforme Boscoso Español MPT",
+    "description": "Uniforme de combate español con camuflaje pixelado MPT boscoso. Chaqueta y pantalón transpirables con refuerzos en rodillas y codos.",
+    "price": 79.99,
+    "stock": 14,
+    "category": "Uniformes",
+    "image": "img/uniforme-boscoso.webp"
+  },
+  {
+    "id": 23,
+    "name": "Uniforme Desértico Legión",
+    "description": "Conjunto de uniforme desértico de estilo legionario español, ligero y resistente. Ideal para partidas en entornos áridos.",
+    "price": 84.99,
+    "stock": 9,
+    "category": "Uniformes",
+    "image": "img/uniforme-desierto.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Boina militar española",
+    "description": "Boina militar de lana con badana interior y porta-emblema. Un complemento clásico para completar tu equipación española.",
+    "price": 24.99,
+    "stock": 20,
+    "category": "Uniformes",
+    "image": "img/boina.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Parche Bandera de España",
+    "description": "Parche bordado con la bandera de España y cierre de velcro. Tamaño compacto para chalecos, gorras y mochilas tácticas.",
+    "price": 4.99,
+    "stock": 50,
+    "category": "Parches",
+    "image": "img/parche-espana.png"
+  },
+  {
+    "id": 26,
+    "name": "Parche Escudo de España",
+    "description": "Parche del escudo de España con acabado bordado y velcro en el reverso. Añade un toque nacional a tu equipo.",
+    "price": 4.99,
+    "stock": 45,
+    "category": "Parches",
+    "image": "img/parche-escudo.png"
+  },
+  {
+    "id": 27,
+    "name": "Parche Guardia Real",
+    "description": "Parche bordado de la Guardia Real española con velcro. Ideal para coleccionistas y equipaciones de temática histórica.",
+    "price": 5.99,
+    "stock": 40,
+    "category": "Parches",
+    "image": "img/parche-guardia.png"
+  },
+  {
+    "id": 28,
+    "name": "Pistolera táctica",
+    "description": "Funda táctica de pierna ajustable para pistola, con sujeción de velcro y cierre de seguridad. Compatible con la mayoría de réplicas.",
+    "price": 19.99,
+    "stock": 16,
+    "category": "Accesorios",
+    "image": "img/pistol-case.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Bolsa BB 0.25 g (3000 uds.)",
+    "description": "Munición de bolas BB de 6 mm y 0.25 g en bolsa de 3000 unidades. Precisión y consistencia para tus réplicas de airsoft.",
+    "price": 12.99,
+    "stock": 60,
+    "category": "Accesorios",
+    "image": "img/bb.jpg"
+  }
+];
+
+window.USUARIO_RESPALDO = {
+  "name": "Manuel García López",
+  "address": "Calle Mayor 42, 3ºB, 28013 Madrid",
+  "email": "manuel.garcia@example.com",
+  "phone": "+34 600 123 456"
+};
